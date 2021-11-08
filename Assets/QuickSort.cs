@@ -41,6 +41,7 @@ public class QuickSort : MonoBehaviour
     {
         var pivotIndex = SetPivotIndex(cubes.Count);
         cubes[pivotIndex].GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+       
     }
 
     int SetPivotIndex(int count) => Random.Range(0, count);
